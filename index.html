@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beer Shop</title>
+    <title>Candy Store</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css"
 </head>
 
 
 <body>
     <!--top bar-->
-    <div id="topbar">
+    <section id="topbar">
         <!--heading-->
         <h1>Candy Store</h1>
         <!--navigation-->
@@ -24,7 +25,7 @@
                 </ul>
             </nav>
     <!--end topbar-->
-    </div>
+    </section>
 
 
     <!--splash screen-->
@@ -40,7 +41,7 @@
 
 
     <!--map screen-->
-    <div id="location" class="mapscreen">
+    <section id="location" class="mapscreen">
         <!--heading-->
         <h1>Best Location</h1>
         <!--link to the top-->
@@ -51,24 +52,26 @@
         <p>CANDY SHOP means a building used for producing, mixing, compounding, 
             cooling or otherwise preparing confectionery products, including, without 
             limiting the generality thereof, chocolate or candy, and where such prepared
-             confectionery products are offered for retail sale therefrom.</p>
-    </div>
+            confectionery products are offered for retail sale therefrom.
+        </p>
+    </section>
     <!--end  map screen-->
 
     <!--gallery section-->
-    <div id="gallery" class="gallery">
+    <section id="gallery" class="gallery">
         <!--heading-->
         <h1>Gallery</h1>
         <!--link to the top-->
         <a href="#topbar">Top</a>
         <!--three column pictures-->
-        <img src="./images/mixed_candies.jpg" alt="Some mixed candies">        
-        <img src="./images/chocolate_bars.jpg" alt="Some chocolate bars">
-        <img src="./images/hard_candy.jpg" alt="Some hard candies">
-
+        <section class="grid3">
+            <img src="./images/mixed_candies.jpg" alt="Some mixed candies">        
+            <img src="./images/chocolate_bars.jpg" alt="Some chocolate bars">
+            <img src="./images/hard_candy.jpg" alt="Some hard candies">
+        </section>
         <!--one big picture -->
         <img src="./images/candyshop.jpg" alt="A view of the candy Store">   
-    </div>
+    </section>
     <!--end gallery section-->
 
     <!--menu screen-->
@@ -79,84 +82,89 @@
         <a href="#topbar">Top</a>
 
         <!--two column for products-->
-        <article>
-            <h2>Sugar covered candies</h2>
-            <img src="./images/sugar_covered.jpg" alt="sugar covered candy">        
-            <p>caramel squares, Coffee Rio, Long Boys, Squirrel nut caramels, 
-                Caramel Crunch, Caramel Creams, Jelly Belly Caramel Corn,Vanilla Caramel</p>
+        <div class="grid2">
+            <article>
+                <h2>Sugar covered candies</h2>
+                <img src="./images/sugar_covered.jpg" alt="sugar covered candy">        
+                <p>caramel squares, Coffee Rio, Long Boys, Squirrel nut caramels, 
+                    Caramel Crunch, Caramel Creams, Jelly Belly Caramel Corn,Vanilla Caramel</p>
             </article>
 
-        <article>
-            <h2>Soft candies</h2>
-            <img src="./images/soft_candy.jpg" alt="soft candies">        
-            <p>Gummi bears, Gummi worms, Gummi Cheries, Gummi cola bottles,
-                 Gummi fish, Gummi banana strawberry ring, Fraise Tagada</p>
-        </article>
+            <article>
+                <h2>Christmas Candy</h2>
+                <img src="./images/bastones.jpg" alt="bastones">        
+                <p>Gummi bears, Gummi worms, Gummi Cheries, Gummi cola bottles,
+                    Gummi fish, Gummi banana strawberry ring, Fraise Tagada</p>
+            </article>
+            
+
+            <article>
+                <h2>Paper covered candies</h2>
+                <img src="./images/paper_covered.jpg" alt="paper covered candies">        
+                <p>Candy Buttons, Candy canes, Jolly Rancher, Life Savers, Rock, Sweethearts (candy), PEZ.</p>
+            </article>
         
+            <article>
+                <h2>Macaroons</h2>
+                <img src="./images/macarons.jpg" alt="macaroons">
+                <p> Warheads, Sour Patch Kids, Sour Punch, Toxic Waste</p>
+            </article>
 
-        <article>
-            <h2>Paper covered candies</h2>
-            <img src="./images/paper_covered.jpg" alt="paper covered candies">        
-            <p>Candy Buttons, Candy canes, Jolly Rancher, Life Savers, Rock, Sweethearts (candy), PEZ.</p>
-        </article>
-      
-        <article>
-            <h2>Macaroons</h2>
-            <img src="./images/macarons.jpg" alt="macaroons">
-            <p> Warheads, Sour Patch Kids, Sour Punch, Toxic Waste</p>
-        </article>
+            <article>
+                <h2>Lollipops</h2>
+                <img src="./images/lollipops.jpg" alt="lollipops">
+                <p>Sugar Daddy, Chupa Chups</p>
+            </article>
 
-        <article>
-            <h2>Lollipops</h2>
-            <img src="./images/lollipops.jpg" alt="lollipops">
-            <p>Sugar Daddy, Chupa Chups</p>
-        </article>
-
-        <article>
-            <h2>Easter Eggs</h2>
-            <img src="./images/easter_eggs.jpg" alt="Easter eggs">
-            <p>CHershey, Bar-Hershey, Milk Chocolate, Twix Mars, Snickers, Milk Duds, Milky Way, M&Ms, Kit Kat,
-                 Chocolate Covered Raisins, Chocolate Covered Cherries, Skittles, Baby Ruth, Almond Joy, Krackle</p>
-        </article>
+            <article>
+                <h2>Easter Eggs</h2>
+                <img src="./images/easter_eggs.jpg" alt="Easter eggs">
+                <p>CHershey, Bar-Hershey, Milk Chocolate, Twix Mars, Snickers, Milk Duds, Milky Way, M&Ms, Kit Kat,
+                    Chocolate Covered Raisins, Chocolate Covered Cherries, Skittles, Baby Ruth, Almond Joy, Krackle</p>
+            </article>
+        </div>
 
     </section>
     <!--end menu screen-->
 
     <!--team screen-->
-    <div id="team">
+    <section id="team">
         <!--heading-->
         <h1>Team</h1>
         <!--link to the top-->
         <a href="#topbar">Top</a>
         <!--three column team member pics-->
-
-        <div>
+        <div class="grid3">
             <img src="./images/maria.jpg" alt="Team member">
             <img src="./images/celia.jpg" alt="Team member">
             <img src="./images/claudia.jpg" alt="Team member">
             <img src="./images/jeremy.jpg" alt="Team member">
             <img src="./images/juan.jpg" alt="Team member">
-            <img src="./images/julieta.jpg" alt="Easter eggs">
+            <img src="./images/julieta.jpg" alt="Team member">
         </div>
 
-    </div>
-    <!--end team screen-->
+    </section>
+     <!--end team screen-->
+
+
+     <!--footer-->
+    <footer>
+        <!--copyrights-->
+        
+        <p class="copyright">Copyright 2023 Candy Store | Creates at Barcelona Code School</p>
+        <!--address-->
+        <address>c/Muntaner 262 Barcelona, Spain</address>
+        <!--phone number-->
+        <p><a href="tel: + 36 666 13 54">Call us + 36 666 13 54</a> </p>
+        <!--open hours-->
+        <p>We open every day from dusk till dawn</p>
+        <!--end footer-->
+    </footer>
 
    
 
 </body> 
 
- <!--footer-->
- <footer>
-        <!--copyrights-->
-        <p>Copyright 2023 Candy Store | Creates at Barcelona Code School</p>
-        <!--address-->
-        <p>c/Muntaner 262 Barcelona, Spain</p>
-        <!--phone number-->
-        <p><a href="tel: + 36 666 13 54">Call us + 36 666 13 54</a> </p>
-        <!--open hours-->
-        <p>We open every day from dusk till dawn</p>
-    <!--end footer-->
- </footer>
+
 
 </html>
