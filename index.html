@@ -10,17 +10,17 @@
 
 <body>
     <!--top bar-->
-    <div class="topbar">
+    <div id="topbar">
         <!--heading-->
         <h1>Candy Store</h1>
         <!--navigation-->
             <!--4 nav items-->
             <nav>
                 <ul>
-                    <li><a href="">Location</a></li>
-                    <li><a href="">Gallery</a></li>
-                    <li><a href="">Candy</a></li>
-                    <li><a href="">Team</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#variety">Candy</a></li>
+                    <li><a href="#team">Team</a></li>
                 </ul>
             </nav>
     <!--end topbar-->
@@ -28,23 +28,23 @@
 
 
     <!--splash screen-->
-    <div class="splashscreen">
+    <section class="splashscreen">
         <!--heading-->
-        <h1>Candy Shop: local candy shop</h1>
+        <h1>Candy Store: local candy shop</h1>
         <!--subheading-->
         <h2>We have many scents and flavours</h2>
         <!--button-->
-        <button>See our variety</button>
-    </div>
+        <button><a href="#variety">See our variety</a></button>
+    </section>
     <!--end splash screen-->
 
 
     <!--map screen-->
-    <div class="mapscreen">
+    <div id="location" class="mapscreen">
         <!--heading-->
         <h1>Best Location</h1>
         <!--link to the top-->
-        <a href="">Top</a>
+        <a href="#topbar">Top</a>
         <!--interactive map-->
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9680.122630260625!2d2.1661535551851223!3d41.384487819706905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a36f86bd9563%3A0x35e2667a68438b7e!2sWoncandy%20Shop%20(Barcelona)!5e0!3m2!1ses!2ses!4v1678703420738!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <!--description-->
@@ -56,11 +56,11 @@
     <!--end  map screen-->
 
     <!--gallery section-->
-    <div class="gallery">
+    <div id="gallery" class="gallery">
         <!--heading-->
         <h1>Gallery</h1>
         <!--link to the top-->
-        <a href="">Top</a>
+        <a href="#topbar">Top</a>
         <!--three column pictures-->
         <img src="./images/mixed_candies.jpg" alt="Some mixed candies">        
         <img src="./images/chocolate_bars.jpg" alt="Some chocolate bars">
@@ -72,85 +72,70 @@
     <!--end gallery section-->
 
     <!--menu screen-->
-    <div class="menuscreen">
+    <section id="variety"  class="menuscreen">
         <!--heading-->
         <h1>Candies</h1>
         <!--link to the top-->
-        <a href="">Top</a>
+        <a href="#topbar">Top</a>
 
         <!--two column for products-->
-        <div>
+        <article>
             <h2>Sugar covered candies</h2>
             <img src="./images/sugar_covered.jpg" alt="sugar covered candy">        
             <p>caramel squares, Coffee Rio, Long Boys, Squirrel nut caramels, 
                 Caramel Crunch, Caramel Creams, Jelly Belly Caramel Corn,Vanilla Caramel</p>
-        </div>
+            </article>
 
-        <div>
+        <article>
             <h2>Soft candies</h2>
             <img src="./images/soft_candy.jpg" alt="soft candies">        
             <p>Gummi bears, Gummi worms, Gummi Cheries, Gummi cola bottles,
                  Gummi fish, Gummi banana strawberry ring, Fraise Tagada</p>
-        </div>
+        </article>
         
 
-        <div>
+        <article>
             <h2>Paper covered candies</h2>
             <img src="./images/paper_covered.jpg" alt="paper covered candies">        
             <p>Candy Buttons, Candy canes, Jolly Rancher, Life Savers, Rock, Sweethearts (candy), PEZ.</p>
-        </div>
+        </article>
       
-        <div>
+        <article>
             <h2>Macaroons</h2>
             <img src="./images/macarons.jpg" alt="macaroons">
             <p> Warheads, Sour Patch Kids, Sour Punch, Toxic Waste</p>
-        </div>
+        </article>
 
-        <div>
+        <article>
             <h2>Lollipops</h2>
             <img src="./images/lollipops.jpg" alt="lollipops">
             <p>Sugar Daddy, Chupa Chups</p>
-        </div>
+        </article>
 
-        <div>
+        <article>
             <h2>Easter Eggs</h2>
             <img src="./images/easter_eggs.jpg" alt="Easter eggs">
             <p>CHershey, Bar-Hershey, Milk Chocolate, Twix Mars, Snickers, Milk Duds, Milky Way, M&Ms, Kit Kat,
                  Chocolate Covered Raisins, Chocolate Covered Cherries, Skittles, Baby Ruth, Almond Joy, Krackle</p>
-        </div>
+        </article>
 
-    </div>
+    </section>
     <!--end menu screen-->
 
     <!--team screen-->
-    <div class="Teamscreen">
+    <div id="team">
         <!--heading-->
         <h1>Team</h1>
         <!--link to the top-->
-        <a href="">Top</a>
+        <a href="#topbar">Top</a>
         <!--three column team member pics-->
 
         <div>
             <img src="./images/maria.jpg" alt="Team member">
-        </div>
-
-        <div>
             <img src="./images/celia.jpg" alt="Team member">
-        </div>
-
-        <div>
             <img src="./images/claudia.jpg" alt="Team member">
-        </div>
-
-        <div>
             <img src="./images/jeremy.jpg" alt="Team member">
-        </div>
-
-        <div>
             <img src="./images/juan.jpg" alt="Team member">
-        </div>
-
-        <div>
             <img src="./images/julieta.jpg" alt="Easter eggs">
         </div>
 
@@ -162,14 +147,16 @@
 </body> 
 
  <!--footer-->
+ <footer>
         <!--copyrights-->
-        <h3>Copyright 2023 Candy Store | Creates at Barcelona Code School</h3>
+        <p>Copyright 2023 Candy Store | Creates at Barcelona Code School</p>
         <!--address-->
-        <h3>c/Muntaner 262 Barcelona, Spain</h3>
+        <p>c/Muntaner 262 Barcelona, Spain</p>
         <!--phone number-->
-        <h3>+ 36 666 13 54 </h3>
+        <p><a href="tel: + 36 666 13 54">Call us + 36 666 13 54</a> </p>
         <!--open hours-->
-        <h3>We open every day from dusk till dawn</h3>
+        <p>We open every day from dusk till dawn</p>
     <!--end footer-->
+ </footer>
 
 </html>
