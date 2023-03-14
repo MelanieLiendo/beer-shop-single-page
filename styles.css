@@ -12,6 +12,7 @@ body{
     color: white;
     justify-content: space-between;
     align-items: baseline;
+    padding-left: 1em;
     
 
 }
@@ -20,20 +21,24 @@ body{
     display: flex;
     list-style: none;
     color: white;  
+    
 }
 
 #topbar ul li {
 margin-right: 1em;
 
 
+
 }
 
 #topbar a:link  { 
     color: white;
+    text-decoration: none;
 }
 
 #topbar a:visited {
     color: white;
+    text-decoration: none;
 }
 
 .splashscreen a:link  { 
@@ -52,6 +57,9 @@ footer a:visited {
     color: white;
 }
 
+a:link:hover {
+
+}
 
 .splashscreen {
     text-align: center;
@@ -67,10 +75,8 @@ footer a:visited {
 }
 
 .splashscreen h1 {
-    font-size: 200%;
+    font-size: 300%;
     margin-top: 0;
-    font-family: cursive;
-    
     
 
     
@@ -106,8 +112,6 @@ iframe {
 }
 
 
-
-
 .grid3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -115,8 +119,7 @@ iframe {
 }
 
 
-.grid3 img {
-    
+.grid3 img {    
     width: 100%;
     padding: 0% 0%;
 }
@@ -128,8 +131,7 @@ iframe {
 
 }
 
-.grid2 img {
-   
+.grid2 img {   
    width: 50%;
    align-items: center;
 }
@@ -163,7 +165,10 @@ footer {
 }
 
 
-  .hamburger {display: none;}
+  .hamburger {
+    display: none;
+}
+
 
 @media all and (max-width:800px){
     .grid3 {
@@ -213,6 +218,11 @@ footer {
         justify-content: space-around;
         list-style: none;
 
+    }
+
+    #topbar a:link  { 
+        color: white;
+        text-decoration: none;
     }
 }
     
