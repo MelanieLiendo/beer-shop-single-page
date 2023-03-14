@@ -2,6 +2,9 @@ img {
     width: 100%;
 }
 
+body{
+    margin: 0;
+}
 
 #topbar {
     display: flex;
@@ -57,14 +60,19 @@ footer a:visited {
     background-size: cover;
     background-position: center;
     height: 100vh;    
-          
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
 }
 
 .splashscreen h1 {
-    font-size: xx-large;
+    font-size: 200%;
     margin-top: 0;
     font-family: cursive;
-    padding-top: 15%;
+    
+    
+
     
 }
 
@@ -120,9 +128,6 @@ iframe {
 
 }
 
-
-
-
 .grid2 img {
    
    width: 50%;
@@ -155,4 +160,73 @@ footer {
 
 .copyright {
     font-size: small;
+}
+
+
+  .hamburger {display: none;}
+
+@media all and (max-width:800px){
+    .grid3 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid2 {
+        grid-template-columns: 1fr;
+    }
+
+    #topbar ul  {
+        display: none ;
+
+    }
+    .hamburger {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .hamburger-content {
+        display: none;
+        position: absolute;
+        left:-30px;
+        z-index:1;
+      }
+      
+      .hamburger:hover .hamburger-content {
+        display: block;
+      /* animation: popup .5s ease-in-out both; */
+      }
+      
+      .hamburger span {
+        transition: transform .5s;
+      -webkit-transition: -webkit-transform .5s;
+        display: block;
+        transform: rotate(90deg);
+      }
+      
+      .hamburger:hover span {
+        transition: transform .5s;
+      -webkit-transition: -webkit-transform .5s;
+        display: inline-block;
+        transform: rotate(180deg);
+      }
+     
+        #topbar {
+        justify-content: space-around;
+        list-style: none;
+
+    }
+}
+    
+
+
+
+@media all and (max-width:460px){
+    .grid3 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid2 {
+        grid-template-columns: 1fr;
+    }
+    
+
 }
